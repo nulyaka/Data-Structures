@@ -1,13 +1,5 @@
-//
-//  LLqueue_for_BinTree.h
-//  Binary_Tree_using_Queue
-//
-//  Created by Nulyaka on 1/18/20.
-//  Copyright © 2020 Nulyaka. All rights reserved.
-//
-
-#ifndef LLqueue_for_BinTree_h
-#define LLqueue_for_BinTree_h
+#ifndef LLqueue_h
+#define LLqueue_h
 
 #include <iostream>
 
@@ -135,4 +127,4 @@ QueueLL<T>::~QueueLL() {
     }
 }
 
-#endif /* LLqueue_for_BinTree_h */
+#endif /* LLqueue_h */
