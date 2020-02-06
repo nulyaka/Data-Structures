@@ -3,8 +3,8 @@
 struct Node {
     int data;
     int height;
-    Node* lChild; // left child
-    Node* rChild; // right child
+    Node* lChild;
+    Node* rChild;
 }*root = nullptr;
 
 int getNodeHeight(Node* currNode) {
@@ -13,12 +13,12 @@ int getNodeHeight(Node* currNode) {
     // and Right Child Height (RCH)
     int LCH, RCH;
     
-    // if both current node and its' child exist,
-    // then return childs' height, else the height is 0
+    // if both current node and its child exist,
+    // then return childs height, else the height is 0
     LCH = (currNode && currNode->lChild) ? currNode->lChild->height : 0;
     RCH = (currNode && currNode->rChild) ? currNode->rChild->height : 0;
     
-    // which one has greater height?
+    // which one has a greater height?
     // return it and +1 for current node
     return (LCH > RCH) ? LCH + 1 : RCH + 1;
 }
