@@ -1,6 +1,6 @@
 //
-//  main.cpp
-//  Binary Search Trees
+//  Binary_Search_tree.cpp
+//  Binary Search Tree
 //
 //  Created by Nulyaka on 2/2/20.
 //  Copyright © 2020 Nulyaka. All rights reserved.
@@ -194,7 +194,7 @@ int heightBST (Node* currNode) {
 }
 
 // both getRightMostNode and getLeftMostNode used in deleteFromBST
-// to replace one of them with deleted Node
+// to replace deleted node with one of them
 Node* getRightMostNode (Node *currNode) {
     
     while (currNode && currNode->rightChild != nullptr) {
@@ -231,7 +231,7 @@ Node* deleteFromBST (Node* currNode, int key) {
         Node* temp;
         
         // depending on heights of childs
-        // replacing deleted node with node before or after in order
+        // replacing deleted node with node before or after inOrder
         if (heightBST(currNode->leftChild) > heightBST(currNode->rightChild)) {
             
             temp = getRightMostNode(currNode->leftChild);
