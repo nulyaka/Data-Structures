@@ -71,24 +71,28 @@ void Heap::insertHapify (const std::vector<int> &dataArray) {
     
     int arrSize = int(m_heapTree.size());
     
-    for (int last(arrSize - 1), curr(last); last >= 0; --last) {
+    for (int last(arrSize - 1), curr(last), child(curr * 2); last >= 0; --last) {
         
-        while (curr * 2 < arrSize - 1) {
+        while (child < arrSize - 1) {
             
-            if (m_heapTree.at(curr) < m_heapTree.at(curr * 2)) {
+            int greaterChild;
+            
+            if (m_heapTree.at(child) > m_heapTree.at(child + 1)) {
+                greaterChild = child;
+            }
+            else {
+                greaterChild = child + 1;
+            }
+            
+            if(m_heapTree.at(curr) < m_heapTree.at(greaterChild)) {
                 
-                if(m_heapTree.at(curr * 2) > m_heapTree.at(curr * 2 + 1)) {
-                    
-                    std::swap(m_heapTree.at(curr), m_heapTree.at(curr * 2));
-                    curr = curr * 2;
-                }
-                else {
-                    std::swap(m_heapTree.at(curr), m_heapTree.at(curr * 2 + 1));
-                    curr = curr * 2 + 1;
-                }
+                std::swap(m_heapTree.at(curr), m_heapTree.at(greaterChild));
+                curr = greaterChild;
+                child = curr * 2;;
             }
         }
         curr = last;
+        child = curr * 2;
     }
 }
 
