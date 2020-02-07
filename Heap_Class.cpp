@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 
+// Max Heap
 class Heap {
 private:
     std::vector<int> m_heapTree;
@@ -17,12 +18,22 @@ public:
         insertArray(dataArray);
     }
     
+    void printHeapTree ();
     void insert (int data);
     void insertArray (const std::vector<int> &dataArray);
+    void insertHapify (std::vector<int> &dataArray);
     void deleteRoot ();
     
     ~Heap() {}
 };
+
+void Heap::printHeapTree() {
+    
+    for(int i(1); i < m_heapTree.size(); ++i) {
+        std::cout << m_heapTree.at(i) << ' ';
+    }
+    std::cout << std::endl;
+}
 
 void Heap::insert (int data) {
     
@@ -49,6 +60,35 @@ void Heap::insertArray (const std::vector<int> &dataArray) {
     
     for (int i(0); i < dataArray.size(); ++i) {
         this->insert(dataArray.at(i));
+    }
+}
+
+void Heap::insertHapify (std::vector<int> &dataArray) {
+    
+    for (const auto &el: dataArray) {
+        m_heapTree.push_back(el);
+    }
+    
+    int arrSize = int(m_heapTree.size());
+    
+    for (int last(arrSize - 1), curr(last); last >= 0; --last) {
+        
+        while (curr * 2 < arrSize - 1) {
+            
+            if (m_heapTree.at(curr) < m_heapTree.at(curr * 2)) {
+                
+                if(m_heapTree.at(curr * 2) > m_heapTree.at(curr * 2 + 1)) {
+                    
+                    std::swap(m_heapTree.at(curr), m_heapTree.at(curr * 2));
+                    curr = curr * 2;
+                }
+                else {
+                    std::swap(m_heapTree.at(curr), m_heapTree.at(curr * 2 + 1));
+                    curr = curr * 2 + 1;
+                }
+            }
+        }
+        curr = last;
     }
 }
 
