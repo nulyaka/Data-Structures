@@ -21,7 +21,7 @@ public:
     void printHeapTree ();
     void insert (int data);
     void insertArray (const std::vector<int> &dataArray);
-    void insertHapify (std::vector<int> &dataArray);
+    void insertHapify (const std::vector<int> &dataArray);
     void deleteRoot ();
     
     ~Heap() {}
@@ -63,7 +63,7 @@ void Heap::insertArray (const std::vector<int> &dataArray) {
     }
 }
 
-void Heap::insertHapify (std::vector<int> &dataArray) {
+void Heap::insertHapify (const std::vector<int> &dataArray) {
     
     for (const auto &el: dataArray) {
         m_heapTree.push_back(el);
