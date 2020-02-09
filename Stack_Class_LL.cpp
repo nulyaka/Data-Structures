@@ -1,3 +1,12 @@
+  
+//
+//  Stack_Class_LL.cpp
+//  Stack
+//
+//  Created by Nulyaka on 2/5/20.
+//  Copyright © 2020 Nulyaka. All rights reserved.
+//
+
 #include <iostream>
 
 class Node {
