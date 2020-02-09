@@ -1,3 +1,12 @@
+  
+//
+//  Linked_List.cpp
+//  Linked List
+//
+//  Created by Nulyaka on 2/1/20.
+//  Copyright © 2020 Nulyaka. All rights reserved.
+//
+
 #include <iostream>
 #include <vector>
 
