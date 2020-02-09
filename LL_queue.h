@@ -1,3 +1,12 @@
+  
+//
+//  LL_queue.cpp
+//  Queue
+//
+//  Created by Nulyaka on 2/2/20.
+//  Copyright © 2020 Nulyaka. All rights reserved.
+//
+
 #ifndef LLqueue_h
 #define LLqueue_h
 
