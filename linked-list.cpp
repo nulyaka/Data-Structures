@@ -1,5 +1,4 @@
-  
-//
+  //
 //  linked-list.cpp
 //  linked-list
 //
