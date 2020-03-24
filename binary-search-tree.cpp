@@ -1,6 +1,6 @@
 //
-//  Binary_Search_tree.cpp
-//  Binary Search Tree
+//  binary-search-tree.cpp
+//  binary-search-tree
 //
 //  Created by Nulyaka on 2/2/20.
 //  Copyright © 2020 Nulyaka. All rights reserved.
