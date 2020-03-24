@@ -1,14 +1,14 @@
   
 //
-//  LL_queue.cpp
-//  Queue
+//  linkedlistqueue.h
+//  linkedlistqueue
 //
 //  Created by Nulyaka on 2/2/20.
 //  Copyright © 2020 Nulyaka. All rights reserved.
 //
 
-#ifndef LLqueue_h
-#define LLqueue_h
+#ifndef linkedlistqueue
+#define linkedlistqueue
 
 #include <iostream>
 
@@ -136,4 +136,4 @@ QueueLL<T>::~QueueLL() {
     }
 }
 
-#endif /* LLqueue_h */
+#endif /* linkedlistqueue */
