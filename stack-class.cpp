@@ -1,7 +1,7 @@
   
 //
-//  Stack_Class.cpp
-//  Stack
+//  stack-class.cpp
+//  stack-class
 //
 //  Created by Nulyaka on 2/5/20.
 //  Copyright © 2020 Nulyaka. All rights reserved.
