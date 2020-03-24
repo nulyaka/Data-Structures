@@ -1,14 +1,14 @@
   
 //
-//  binary-tree-using-linkedlistqueue.cpp
-//  binary-tree-using-linkedlistqueue
+//  binary-tree-using-queue-class.cpp
+//  binary-tree-using-queue-class
 //
 //  Created by Nulyaka on 2/3/20.
 //  Copyright © 2020 Nulyaka. All rights reserved.
 //
 
 #include <iostream>
-#include "linkedlistqueue.h"
+#include "queue-class.h"
 
 class BinTreeNode{
 public:
