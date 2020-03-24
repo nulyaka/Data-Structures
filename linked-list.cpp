@@ -1,7 +1,7 @@
   
 //
-//  Linked_List.cpp
-//  Linked List
+//  linked-list.cpp
+//  linked-list
 //
 //  Created by Nulyaka on 2/1/20.
 //  Copyright © 2020 Nulyaka. All rights reserved.
