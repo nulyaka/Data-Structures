@@ -1,7 +1,7 @@
   
 //
-//  Heap_Class.cpp
-//  Heap
+//  heap-class.cpp
+//  heap-class
 //
 //  Created by Nulyaka on 2/5/20.
 //  Copyright © 2020 Nulyaka. All rights reserved.
